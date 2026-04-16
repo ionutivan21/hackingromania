@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="terminal.html">Terminal</a>
+  </nav>
+</header>
+
+<main class="hero">
+  <div class="hero-panel">
+    <p class="badge">Ethical Hacking • Cyber Security • Learning Platform</p>
+    <h1 id="typing"></h1>
+    <p class="subtitle">
+      Învață securitate cibernetică, urmărește progresul și urcă în level.
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="register.html">Start Learning</a>
+      <a class="btn secondary" href="login.html">Login</a>
+    </div>
+  </div>
+</main>
+
+<section class="stats">
+  <div class="card stat">
+    <h3>15000+</h3>
+    <p>Lecții</p>
+  </div>
+  <div class="card stat">
+    <h3>10000+</h3>
+    <p>Quiz-uri</p>
+  </div>
+  <div class="card stat">
+    <h3>5000+</h3>
+    <p>Teste</p>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 ionutivan21 • Ethical Hacking Academy
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

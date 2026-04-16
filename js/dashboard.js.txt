@@ -1,0 +1,57 @@
+import { getProfile, addXP } from "./api.js";
+
+const token = localStorage.getItem("token");
+
+const usernameEl = document.getElementById("username");
+const emailEl = document.getElementById("email");
+const xpEl = document.getElementById("xp");
+const levelEl = document.getElementById("level");
+const activityListEl = document.getElementById("activity-list");
+const logoutBtn = document.getElementById("logout-btn");
+const gainXPBtn = document.getElementById("gain-xp-btn");
+
+if (!token) {
+  window.location.href = "login.html";
+}
+
+async function loadProfile() {
+  const data = await getProfile(token);
+
+  if (!data || data.error) {
+    localStorage.removeItem("token");
+    window.location.href = "login.html";
+    return;
+  }
+
+  usernameEl.textContent = data.username ?? "-";
+  emailEl.textContent = data.email ?? "-";
+  xpEl.textContent = String(data.xp ?? 0);
+  levelEl.textContent = String(data.level ?? 1);
+
+  if (activityListEl) {
+    activityListEl.innerHTML = `
+      <div class="progress-item">Profil încărcat cu succes.</div>
+      <div class="progress-item">XP: ${data.xp ?? 0}</div>
+      <div class="progress-item">Level: ${data.level ?? 1}</div>
+    `;
+  }
+}
+
+logoutBtn?.addEventListener("click", () => {
+  localStorage.removeItem("token");
+  window.location.href = "index.html";
+});
+
+gainXPBtn?.addEventListener("click", async () => {
+  const result = await addXP(token, 10);
+  if (result.error) {
+    alert(result.error);
+    return;
+  }
+
+  xpEl.textContent = String(result.xp);
+  levelEl.textContent = String(result.level);
+  await loadProfile();
+});
+
+loadProfile();

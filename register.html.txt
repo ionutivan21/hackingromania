@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar compact">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="auth-wrap">
+  <section class="card auth-card">
+    <h1>Register</h1>
+    <p class="muted">Creează cont cu username, email și parolă.</p>
+
+    <form id="register-form" class="auth-form">
+      <label for="reg-username">Username</label>
+      <input id="reg-username" type="text" placeholder="ionutivan21" required>
+
+      <label for="reg-email">Email</label>
+      <input id="reg-email" type="email" placeholder="email@exemplu.com" required>
+
+      <label for="reg-password">Parolă</label>
+      <input id="reg-password" type="password" placeholder="Parola ta" required>
+
+      <button class="btn primary" type="submit">Create account</button>
+    </form>
+
+    <p class="auth-switch">Ai deja cont? <a href="login.html">Login</a></p>
+  </section>
+</main>
+
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>

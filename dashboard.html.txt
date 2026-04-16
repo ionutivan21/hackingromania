@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar compact">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terminal.html">Terminal</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <section class="card dashboard-top">
+    <h1>Dashboard</h1>
+    <p class="muted">Profilul tău și progresul acumulat.</p>
+  </section>
+
+  <section class="grid-2">
+    <article class="card">
+      <h2>Cont</h2>
+      <p><strong>Username:</strong> <span id="username">-</span></p>
+      <p><strong>Email:</strong> <span id="email">-</span></p>
+    </article>
+
+    <article class="card">
+      <h2>Progres</h2>
+      <p><strong>XP:</strong> <span id="xp">0</span></p>
+      <p><strong>Level:</strong> <span id="level">1</span></p>
+      <button id="gain-xp-btn" class="btn primary" type="button">+10 XP</button>
+    </article>
+  </section>
+
+  <section class="card">
+    <div class="row-between">
+      <h2>Ultimele activități</h2>
+      <button id="logout-btn" class="btn secondary" type="button">Logout</button>
+    </div>
+    <div id="activity-list" class="progress-list"></div>
+  </section>
+</main>
+
+<script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

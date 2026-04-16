@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terminal | Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar compact">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <section class="card terminal-card">
+    <h1>Hacker Terminal</h1>
+    <p class="muted">Comenzi: help, scan, hack, xp, clear</p>
+
+    <div id="terminal" class="terminal-output"></div>
+    <input id="cmd" type="text" placeholder="type command..." autocomplete="off">
+  </section>
+</main>
+
+<script src="js/terminal.js"></script>
+</body>
+</html>

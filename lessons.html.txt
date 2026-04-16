@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lecții | Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar compact">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="quizzes.html">Quiz-uri</a>
+    <a href="tests.html">Teste</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <section class="card">
+    <h1>Lecții</h1>
+    <p class="muted">Aici poți pune lecțiile tale despre securitate, rețele, Linux și web.</p>
+
+    <div class="grid-3" style="margin-top: 18px;">
+      <article class="card">
+        <h3>Bazele securității</h3>
+        <p>Ce este un atac, ce este apărarea și cum funcționează sistemele securizate.</p>
+      </article>
+
+      <article class="card">
+        <h3>Rețele</h3>
+        <p>IP, porturi, protocoale și noțiuni de bază despre comunicarea în rețea.</p>
+      </article>
+
+      <article class="card">
+        <h3>Web security</h3>
+        <p>Concepte generale despre XSS, SQL Injection și protecție web.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

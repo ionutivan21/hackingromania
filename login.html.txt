@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar compact">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+  </nav>
+</header>
+
+<main class="auth-wrap">
+  <section class="card auth-card">
+    <h1>Login</h1>
+    <p class="muted">Intră în cont și continuă progresul.</p>
+
+    <form id="login-form" class="auth-form">
+      <label for="login-email">Email</label>
+      <input id="login-email" type="email" placeholder="email@exemplu.com" required>
+
+      <label for="login-password">Parolă</label>
+      <input id="login-password" type="password" placeholder="Parola ta" required>
+
+      <button class="btn primary" type="submit">Login</button>
+    </form>
+
+    <p class="auth-switch">Nu ai cont? <a href="register.html">Creează unul</a></p>
+  </section>
+</main>
+
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>

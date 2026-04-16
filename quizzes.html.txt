@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz-uri | Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar compact">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="lesson.html">Lecții</a>
+    <a href="tests.html">Teste</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <section class="card">
+    <h1>Quiz-uri</h1>
+    <p class="muted">Răspunde la întrebări și vezi scorul în timp real.</p>
+
+    <div class="quiz-box">
+      <h2 id="quiz-question">Se încarcă...</h2>
+      <div id="quiz-answers" class="answers-grid"></div>
+      <p id="quiz-feedback" class="feedback"></p>
+      <div class="row-between">
+        <p><strong>Scor:</strong> <span id="quiz-score">0</span></p>
+        <button id="next-quiz" class="btn primary" type="button">Următorul</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="js/quiz.js"></script>
+</body>
+</html>

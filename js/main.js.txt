@@ -1,0 +1,16 @@
+const text = "Ethical Hacking Academy";
+const target = document.getElementById("typing");
+
+let index = 0;
+
+function type() {
+  if (!target) return;
+
+  if (index <= text.length) {
+    target.textContent = text.slice(0, index);
+    index += 1;
+    setTimeout(type, 70);
+  }
+}
+
+type();

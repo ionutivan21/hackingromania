@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teste | Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar compact">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="lesson.html">Lecții</a>
+    <a href="quizzes.html">Quiz-uri</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <section class="card">
+    <h1>Teste</h1>
+    <p class="muted">Completează testul și salvează scorul în progres.</p>
+
+    <div id="test-list"></div>
+
+    <div class="row-between" style="margin-top: 18px;">
+      <button id="submit-test" class="btn primary" type="button">Trimite test</button>
+      <p><strong>Scor final:</strong> <span id="test-score">0</span></p>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="js/test.js"></script>
+</body>
+</html>

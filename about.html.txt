@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Ethical Hacking Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar compact">
+  <div class="logo">ionutivan21</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="terminal.html">Terminal</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <section class="card">
+    <h1>Despre platformă</h1>
+    <p class="muted">
+      Ethical Hacking Academy este un proiect educațional pentru învățarea securității cibernetice,
+      cu lecții, quiz-uri, teste, progres salvat și conturi de utilizator.
+    </p>
+
+    <div class="grid-2" style="margin-top: 18px;">
+      <div class="card">
+        <h3>Ce găsești</h3>
+        <p>Lecții, quiz-uri, teste, terminal demonstrativ și dashboard de progres.</p>
+      </div>
+      <div class="card">
+        <h3>Scop</h3>
+        <p>Să înveți bazele și conceptele de cyber într-un mod clar și organizat.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

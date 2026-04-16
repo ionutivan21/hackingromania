@@ -1,0 +1,39 @@
+import { login, register } from "./api.js";
+
+const loginForm = document.getElementById("login-form");
+const registerForm = document.getElementById("register-form");
+
+loginForm?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById("login-email").value.trim();
+  const password = document.getElementById("login-password").value;
+
+  const res = await login({ email, password });
+
+  if (res.token) {
+    localStorage.setItem("token", res.token);
+    window.location.href = "dashboard.html";
+    return;
+  }
+
+  alert(res.error || "Login greșit");
+});
+
+registerForm?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const username = document.getElementById("reg-username").value.trim();
+  const email = document.getElementById("reg-email").value.trim();
+  const password = document.getElementById("reg-password").value;
+
+  const res = await register({ username, email, password });
+
+  if (res.id) {
+    alert("Cont creat!");
+    window.location.href = "login.html";
+    return;
+  }
+
+  alert(res.error || "Eroare la creare cont");
+});
